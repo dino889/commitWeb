@@ -1,0 +1,101 @@
+<!doctype html>
+<html class = "main_color" lang="KO">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/outside_order.css">
+    <title>Commit</title>
+  </head>
+  <body class = "background">
+    <h1>Commit 프로젝트 신청</h1>
+    <div>
+    <label class = "main_name" id = "Category_name"><span class = "star">*</span>카테고리</label>
+    <select class = "Category" name="select_Category">
+      <option value="" selected>카테고리</option>
+      <option value="Category_development">개발</option>
+      <option value="Category_design">디자인</option>
+    </select>
+
+    <select class = "CateGory" name="select_CateGory">
+      <option value="" selected>세부 카테고리</option>
+      <option value="Sub_CateGory_Web">웹</option>
+      <option value="Sub_CateGory_App">어플리케이션</option>
+      <option value="Sub_CateGory_Game">게임</option>
+      <option value="Sub_CateGory_VOD">영상</option>
+    </select>
+    </div>
+
+    <div class="Explanation">
+      <span>프로젝트 카테고리를 선택해 주세요.</span>
+    </div>
+
+    <br>
+
+      <div class="">
+        <label class = "main_name"id = "Project_name"><span class = "star">*</span>프로젝트 이름</label>
+        <input type="text" name="input_Project_name" size = "30" value="">
+      </div>
+
+      <div class="Explanation">
+        <span>프로젝트 이름을 입력해주세요.</span>
+      </div>
+
+    <br>
+
+    <div class="">
+    <label class = "main_name" id = "Project_term"><span class = "star">*</span>예상 기간</label>
+    <input type="text" name="input_Project_term" size = "30" value="">
+    </div>
+
+    <div class="Explanation">
+      <span>프로젝트를 진행할 기간을 일 단위로 입력해주세요.</span>
+    </div>
+
+    <br>
+
+    <div class="">
+      <label class = "main_name" id = "planning_status"><span class = "star">*</span>기획 상태</label>
+      <ul>
+        <li><input type="radio" name="select_planning_status_1" value="1">아이디어만 있습니다.</li>
+        <li><input type="radio" name="select_planning_status_1" value="2">필요한 내용들을 간단히 정리해 두었습니다.</li>
+        <li><input type="radio" name="select_planning_status_1" value="3">상세한 기획 문서가 존재합니다.</li>
+      </ul>
+    </div>
+
+    <br>
+
+    <label class = "main_name" id = "description"><span class = "star">*</span>프로젝트 내용</label>
+
+    <div class="">
+      <textarea class = "nonsize" autocomplete= "off" id = description maxlength="5000" name="name" rows="60" cols="100"
+      style="max-width : 100%">
+      &lt; 프로젝트 진행 방식 &gt
+      예시) 시작 지점에서 미팅, 주 1회 미팅 등
+      &lt; 프로젝트의 현재 상황 &gt
+      예시) 현재 준비상황, 디자인 여부, PM 여부, 진행 계획 등
+      &lt; 상세한 업무 내용 &gt
+      예시) 앱의 용도, Android? iOS?, 작업 분량, 주요 기능 List, 필요한 조건 등
+      &lt; 참고자료 / 유의사항 &gt
+      예시) 참고 앱, 기타 유의사항 등
+    </textarea>
+    </div>
+
+    <br>
+
+    <div class="">
+      <label class = "main_name" id = "ext_project"><span class = "star">*</span>프로젝트 매니징 경험</label>
+      <ul>
+        <li><label class = "radio-inline"><input id = "ext_project_1" name = "ext_project" type = "radio" value = "Ture">예, 매니징 경험이 있습니다.</label></li>
+        <li><label class = "radio-inline"><input id = "ext_project_2" name = "ext_project" type = "radio" value = "False">아니요, 없습니다.</label></li>
+      </ul>
+
+    </div>
+
+    <br>
+    <div class="Submit-btn">
+          <a href="mailto:club_commit@naver.com" class = "btn btn-large">제출하기</a> 
+    </div>
+
+
+  </body>
+</html>

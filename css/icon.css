@@ -1,0 +1,30 @@
+@font-face{
+    font-family: 'NanumGothic';
+    src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+}
+.main{
+    width:800px;
+    height:120px;
+}
+.main_common{
+    float: left;
+    width: 100px;
+    height: 100kpx;
+    border: 50px;
+}
+h4{
+    font-family: "NanumGothic","나눔고딕","sans_serif";
+    word-break: keep-all;
+    text-align: center;
+
+    font-weight: 400;
+    color: black;
+}
+.intro_cont_wrap{
+    width: 100%;
+    margin :0 auto;
+}
+.img-responsive{
+    display: block;
+    margin-left: 70px;
+}

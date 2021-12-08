@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin - Register</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin2.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-register mx-auto mt-5">
+      <div class="card-header">회원가입 하세요(일반)</div>
+      <div class="card-body">
+        <form method="POST" action="db.php">
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="id" id="member_id" name="member_id" class="form-control" placeholder="id" required="required" autofocus="autofocus">
+              <label for="member_id">아이디</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="required">
+                  <label for="password">비밀번호</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <input type="password" id="password_confirm" name="password_confirm" class="form-control" placeholder="Password Confirm" required="required">
+                  <label for="password_confirm">비밀번호 확인</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="name" id="name" class="form-control" name="name" placeholder="Name" required="required">
+              <label for="name">성함</label>
+            </div>
+          </div>
+               <div class="form-group">
+            <div class="form-label-group">
+              <input type="email" id="email" class="form-control" name="email" placeholder="Email address" required="required">
+              <label for="email">이메일 주소</label>
+            </div>
+          </div>
+               <div class="form-group">
+            <div class="form-label-group">
+              <input type="phone" id="phone" class="form-control" name="phone" placeholder="Phone Num" required="required">
+              <label for="phone">휴대폰 번호</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="purpose" id="purpose" class="form-control" name="purpose" placeholder="Purpose" required="required">
+              <label for="purpose">가입목적</label>
+            </div>
+          </div>
+               <input class="btn btn-primary btn-block" type="submit" value="등록하기"></input>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="login.html">로그인 페이지</a>
+          <a class="d-block small" href="forgot-password.html">비밀번호가 기억안나?</a>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
